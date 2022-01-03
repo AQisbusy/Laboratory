@@ -1,21 +1,21 @@
-import math
-
-x = 0
-z = 0
-for i in range(2,9):
-    if i % 2 == 0:
-        a = 1 / i * -1
-        x = x + a
-        #print(a)
-    else:
-        b = 1 / i
-        z = z + b
-        #print(b)
-#print(x,z)
-y = 1 + x + z
-print(y)
+class Student(object):
+    def __init__(self,name,tel):
+        self.name = name
+        self.tel = tel
+    def print_tel(self):
+        print('%s:%s'%(self.name,self.tel))
 
 
-y_2 = 1 - 1/2 + 1/3 - 1/4 + 1/5 - 1/6 + 1/7 - 1/8
+big = Student('Bigben',65290)
+Ji = Student('Jim',62741)
 
-print(y_2)
+A = big.print_tel()
+B = Ji.print_tel()
+
+
+
+String = 'I have %d friends.'
+
+refine = '%s'%(String)
+
+print(refine)
